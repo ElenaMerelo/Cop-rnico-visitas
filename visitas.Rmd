@@ -4,10 +4,10 @@ author: "JJ Merelo"
 date: "14 de enero de 2017"
 output: pdf_document
 bibliography: refs.bib
-abstract: "A consecuencia de un vídeo que se ha hecho viral en estos días y en los
-  que se menciona a Copérnico, la figura ha recibido    una cantidad considerable
-  de atención en estos días, pero fue decayendo rápidamente en los días siguientes
-  hasta desaparecer   de los primeros puestos a los tres días. Veamos exactamente
+abstract: "A consecuencia de un vídeo que se ha hecho viral en estos días y en el
+  que se menciona a Copérnico, la figura ha recibido una cantidad considerable
+  de atención, pero fue decayendo rápidamente en los días siguientes
+  hasta desaparecer de los primeros puestos a los tres días. Veamos exactamente
   cuanta y cómo ha evolucionado a lo largo del tiempo. También compararemos con otros
   casos de notoriedad recientes, concluyendo que la duración de una semana se repite,
   con mucha aproximación, para los documentos examinados. \n"
@@ -17,13 +17,13 @@ abstract: "A consecuencia de un vídeo que se ha hecho viral en estos días y en
 
 Desde los años 90 se conoce como "Efecto Slashdot" [@adler1999slashdot,@halavais2001slashdot] al aumento en visitas que experimentan los sitios web cuando son referenciados por publicaciones como Slashdot, una de las más visitadas en el área de tecnología y especialmente programación. Se trata de picos de visitas, dirigidos esencialmente a una dirección web, que en muchos casos y en épocas más oscuras en las que no había redes de publicación de contenidos tenían un efecto muy similar a un ataque de denegación de servicio. En España nos hemos referido también repetidamente al *Efecto Menéame* [@dans2008anatomia], por el efecto provocado por este agregador de noticias e incluso, con anterioridad y en mucha menor medida, el "Efecto Barrapunto" [@blanco2009blog] por la web Barrapunto.com, un agregador de noticias tecnológicas.
 
-Que sepamos, hasta el momento no ha habido demasiados estudios que analicen un efecto similar de las redes sociales, quizás porque ya no provocan ese efecto en los sitios web; mucho menos el efecto que tienen en la búsqueda o *ocupación mental* de conceptos. También es cierto que la analítica web es hoy en día mucho más complicada y que, en general, no se revelan públicamente las visitas a un sitio. Hoy en día interesa más analizar los *trending topic* en redes sociales. Pero no se ha estudiado qué efecto tienen estos *trending topic* en la ocupación mental del público reflejada en su comportamiento de navegación en Internet.
+Que sepamos, hasta el momento no ha habido demasiados estudios que analicen un efecto similar de las redes sociales, quizás porque ya no provocan ese efecto en los sitios web; mucho menos el efecto que tienen en la búsqueda o *ocupación mental* de conceptos. También es cierto que la analítica web es hoy en día mucho más complicada y que, en general, no se revelan públicamente las visitas a un sitio. Actualmente interesa más analizar los *trending topic* en redes sociales. Pero no se ha estudiado qué efecto tienen estos *trending topic* en la ocupación mental del público reflejada en su comportamiento de navegación en Internet.
 
 A principios de 2017, una anécdota en una cabalgata de Reyes Magos de Madrid, en la que un locutor de un vídeo se refirió a un personaje como Colon y este contestó "Soy Copérnico", como [se narra en Verne](http://verne.elpais.com/verne/2017/01/07/articulo/1483785572_720611.html), provocó un aluvión de memes, extendidos a días posteriores cuando un periodista y un político se enzarzaron en un programa de televisión sobre qué había hecho realmente Copérnico. 
 
 En una serie de artículos [@merelo17, @merelo17:2, @Merelo2017:figshare] que marca la evolución temporal de esta ocupación mental o *mindshare* a través de las visitas a la página de la Wikipedia de Copérnico [@wiki:Copernico] hemos venido analizando el cambio en el número de visitas sobre todo buscando cuál es la duración temporal de este fenómeno a través de los cambios diarios. En este artículo, que cierra la serie, esperamos buscar las causas de esa duración, sobre todo comparándola con otros *fenómenos* de visitas a la Wikipedia que han sucedido de forma más o menos simultánea.
 
-El resto del trabajo se organiza de esta forma: A continuación se presenta la metodología que se ha seguido para capturar y analizar los datos; a continuación se analizan las visitas de la página de la Wikipedia y otras páginas relacionadas, así como la evolución en su ránking de páginas vistas en la Wikipedia. Finalmente, tratamos de sacar una serie de conclusiones.
+El resto del trabajo se organiza de esta forma: A continuación se presenta la metodología que se ha seguido para capturar y analizar los datos; luego se analizan las visitas de la página de la Wikipedia y otras páginas relacionadas, así como la evolución en su ránking de páginas vistas en la Wikipedia. Finalmente, tratamos de sacar una serie de conclusiones.
 
 # Metodología
 
@@ -88,9 +88,9 @@ hc.ratios <- data.frame( dia=c(1:nrow(ratio.hc.2016),1:nrow(ratio.hc.2017)),
 ggplot(hc.ratios,aes(x=dia,y=visitas,group=year,col=year))+geom_line()+theme_tufte()
 ```
 
-En el año 2016 hay una tasa ligeramente inferior a 2, es decir, que la página de la teoría heliocéntrica recibe más o menos la mitad de visitas que la de Copérnico, con no demasiadas variaciones; cabe suponer que hay más interés por el personaje que por su aportación, pero tampoco demasiado. Sin embargo, cuando el asunto "Copérnico-Ojeda" estalla, de repente las personas se interesan por el personaje, sin preocuparse demasiado por comprender cuál fue su aportación a la ciencia. Cabe señalar que no sabemos si se tratan de las mismas personas porque no se sabe el camino que siguen en la Wikipedia, aunque es razonable suponer que un porcentaje considerable de las personas que visiten cualquiera de las dos páginas acabará siguiendo los enlaces para ir a la otra. El enlace a la teoría aparece en las primeras líneas de la página de Copérnico y ese el décimo tercer enlace desde el principio de la página, mientras que Copérnico aparece en el segundo párrafo de la página de la teoría siendo más o menos también el mismo número de enlace, el décimo en este momento. 
+En el año 2016 hay una tasa ligeramente inferior a 2, es decir, que la página de la teoría heliocéntrica recibe aproximadamente la mitad de visitas que la de Copérnico, con no demasiadas variaciones; cabe suponer que hay más interés por el personaje que por su aportación, aunque tampoco demasiado. No obstante, cuando el asunto "Copérnico-Ojeda" estalla, de repente las personas se interesan por el personaje, sin preocuparse demasiado por comprender cuál fue su aportación a la ciencia. Cabe señalar que no sabemos si se tratan de las mismas personas porque no se sabe el camino que siguen en la Wikipedia, aunque es razonable suponer que un porcentaje considerable de las que visiten cualquiera de las dos páginas acabará siguiendo los enlaces para ir a la otra. El enlace a la teoría aparece en las primeras líneas de la página de Copérnico y es el décimo tercer enlace desde el principio de la página, mientras que Copérnico aparece en el segundo párrafo de la página de la teoría siendo más o menos el mismo número de enlace, el décimo en este momento. 
 
-Veamos también, como control, otra página, la de Galileo Galilei, que fue quien difundió la teoría heliocéntrica. No aparece de ninguna manera en el incidente pero puede ser interesante para ver el interés que tiene en este tipo de páginas y si hay una derivación de interés de una a otra. 
+Veamos también, como control, otra página, la de Galileo Galilei, que fue quien difundió la teoría heliocéntrica. No aparece de ninguna manera en el incidente pero puede ser interesante para ver el interés que se tiene en este tipo de páginas y si hay una derivación de interés de una a otra. 
 
 ```{r galileo,echo=FALSE}
 galileo.2016 <- read.table('datos/2016-galileo.dat')
@@ -101,9 +101,9 @@ galileo.datos <- data.frame( dia=c(1:nrow(galileo.2016),1:nrow(galileo.2017)),
 ggplot(galileo.datos,aes(x=dia,y=visitas,group=year,col=year))+geom_line()+theme_tufte()
 ```
 
-Aparte de la curiosidad de cómo evolucionan de la misma forma, con una caída considerable el día 7, no hay ninguna tendencia clara ni cabe suponer que las páginas con este tipo de contenido hubieran tenido, un interés creciente del año pasado a este y, de hecho, el día 12 ya hay menos visitas en la página de Galileo que el año anterior. Aunque puede que sí haya habido una cierta transferencia de interés y por tanto de visitas de una a otra, ya que de hecho la de Galileo está enlazadas desde la de Copérnico, el hecho de que no haya cambios en el mismo sentido que la de Copérnico descarta un interés súbito en la ciencia del renacimiento y la teoría heliocéntrica como una causa del aumento de visitas que habrá que atribuir, por tanto, al incidente del que estamos tratando. 
+Aparte de la curiosidad de cómo evolucionan de la misma forma, con una caída considerable el día 7, no hay ninguna tendencia clara ni cabe suponer que las páginas con este tipo de contenido hubieran tenido un interés creciente del año pasado a este y, de hecho, el día 12 ya hay menos visitas en la página de Galileo que el año anterior. Aunque puede que sí haya habido una cierta transferencia de interés y por tanto de visitas de una a otra, ya que la de Galileo está enlazadas desde la de Copérnico, el hecho de que no haya cambios en el mismo sentido que la de Copérnico descarta un interés súbito en la ciencia del renacimiento y la teoría heliocéntrica como una causa del aumento de visitas que habrá que atribuir, por tanto, al incidente que estamos tratando. 
 
-Por otro lado, examinamos también las visitas de la página de Meryl Streep, cuyo discurso durante los Globos de Oro tuvo también una notoriedad considerable, igual que la reacción posterior del presidente electo. Se trata, en este caso, de una página que, de por sí, tiene bastantes visitas, como se ve a continuación.
+Por otro lado, examinamos también las visitas de la página de Meryl Streep, cuyo discurso durante los Globos de Oro tuvo una notoriedad considerable, al igual que la reacción posterior del presidente electo. Se trata, en este caso, de una página que, de por sí, tiene bastantes visitas, como se ve a continuación.
 
 ```{r meryl,echo=FALSE}
 meryl.2016 <- read.table('datos/2016-meryl.dat')
@@ -114,7 +114,7 @@ meryl.datos <- data.frame( dia=c(1:nrow(meryl.2016),1:nrow(meryl.2017)),
 ggplot(meryl.datos,aes(x=dia,y=visitas,group=year,col=year))+geom_line()+theme_tufte()
 ```
 
-Por otro lado, la gráfica tiene el aspecto, bastante similar, de *gorro de bruja*, con un pico considerable y un descenso del número de visitas más gradual a lo largo de aproximadamente una semana. Aunque a la fecha de hoy todavía no ha vuelto al número de visitas original, cabe suponer que sucederá más o menos en el mismo plazo que en la página que nos ocupa, lo que establece en 7 días, con relativa seguridad, la duración del *efecto Twitter* en la notoriedad de una figura pública reflejada en las visitas a las páginas de la Wikipedia.
+La gráfica tiene un aspecto, bastante similar, al de un *gorro de bruja*, con un pico considerable y un descenso del número de visitas más gradual a lo largo de aproximadamente una semana. Aunque a la fecha de hoy todavía no ha vuelto al número de visitas original, cabe suponer que sucederá más o menos en el mismo plazo que en la página que nos ocupa, lo que establece en 7 días, con relativa seguridad, la duración del *efecto Twitter* en la notoriedad de una figura pública reflejada en las visitas a las páginas de la Wikipedia.
 
 # Evolución en el ránking de páginas más visitadas
 
@@ -130,13 +130,13 @@ ranking.08 <- fromJSON("datos/ranking-080117-filtrado.json")
 ggplot(ranking.08[1:20,],aes(x=puesto,y=visitas)) + geom_bar(stat="identity")+ geom_text(aes(label=articulo),color='blue',angle=90)
 ```
 
-De no estar entre las 1000 páginas con más visitas el día anterior, ha entrado directamente en el número 4, ligeramente detrás de los Reyes Magos el día 7 y de la película que, al parecer, estaban poniendo en alguna televisión, Capitán Phillips. Al día siguiente, día 9, el artículo de Copérnico cayó hasta el puesto 49 del ránking filtrado. A partir de ahí bajó al 139, de ahí 334 y a continuación desapareció de las 1000 páginas más vistas de la Wikipedia. La página sobre la teoría heliocéntrica sólo estuvo los dos primeros días, en los puestos 215 y 393, para desaparecer al día siguiente. 
+De no estar entre las 1000 páginas con más visitas el día anterior, ha entrado directamente en el número 4, ligeramente detrás de los Reyes Magos el día 7 y de la película que, al parecer, estaban poniendo en algún canal de televisión, Capitán Phillips. Al día siguiente, día 9, el artículo de Copérnico cayó hasta el puesto 49 del ránking filtrado. A partir de ahí bajó al 139, luego al 334 y finalmente desapareció de las 1000 páginas más vistas de la Wikipedia. La página sobre la teoría heliocéntrica sólo estuvo los dos primeros días, en los puestos 215 y 393, para desaparecer al día siguiente. 
 
 Las otras páginas, como es natural, tienen también su explicación, pero cabe destacar al relativamente desconocido Sandford Fleming que alcanzó tal puesto por [ser el objeto del Google Doodle del día](https://www.google.com/doodles/sandford-flemings-190th-birthday).
 
 #Conclusión
 
-Las visitas a día equivalente se han multiplicado por 20, más o menos, el primer día. Los días siguientes se va perdiendo interés, alcanzando el aumento en el número de visitas más o menos una semana, que se puede considerar, por tanto, la duración estándar de la vida de un *meme*, al menos en estas fechas y en este país y para memes de este tipo, con un sólo nombre o figura identificable. Los datos obtenidos tanto para Copérnico como para otros incidentes similares, como el de Meryl Streep, parecen confirmar esos datos, que, evidentemente sólo tendrán validez estadística universal cuando se reproduzcan los resultados para muchos más casos similares. 
+Las visitas a día equivalente se han multiplicado por 20, más o menos, el primer día. Los días siguientes se va perdiendo interés, alcanzando el aumento en el número de visitas más o menos en una semana, que se puede considerar, por tanto, la duración estándar de la vida de un *meme*, al menos en estas fechas y en este país y para memes de este tipo, con un sólo nombre o figura identificable. Los datos obtenidos tanto para Copérnico como para otros incidentes similares, como el de Meryl Streep, parecen confirmar esos datos, que evidentemente sólo tendrán validez estadística universal cuando se reproduzcan los resultados para muchos más casos similares. 
 
 Estos memes, además, no suelen tener demasiada *profundidad*, quedándose relegados a una sola página e incluso a los primeros párrafos de la misma. No parece que haya extensión del interés a otros conceptos o personas relacionados con el mismo. En cuanto a la importancia global en la *ocupación mental* del público de Internet, depende en gran medida del interés inicial por el sujeto. Las visitas a la página de Meryl Streep, por ejemplo, alcanzan un nivel mucho mayor y su puesto en el ránking se mantiene durante más tiempo, también porque, previamente, ya estaba entre las 1000 páginas más vistas de la Wikipedia española. 
 
